@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo eventos</title>
+  <link rel="stylesheet" href="_styles.css" />
+  <script src="_script.js"></script>
+</head>
+
+<body>
+  <div>
+    <div>
+      <input type="text" id="pantalla" value="" readonly>
+      <input type="text" id="resultado" value="" readonly>
+    </div>
+  </div>
+  <div></div>
+  <div class="buttons-row">
+    <div>
+      <button onclick="asignarValor(7)">7</button>
+      <!-- <input type="button" id="7" value="7" onclick="asignarValor(7)"></input> -->
+    </div>
+    <div>
+      <button onclick="asignarValor(8)">8</button>
+      <!-- <input type="button" id="8" value="8"></input> -->
+    </div>
+    <div>
+      <button onclick="asignarValor(9)">9</button>
+      <!-- <input type="button" id="9" value="9"></input> -->
+    </div>
+    <div>
+      <!-- <button onclick="asignarValor(/)">/</button> -->
+      <button onclick="asignarValor('/')">/</button>
+    </div>
+  </div>
+
+
+  <div class="buttons-row">
+    <div>
+      <button onclick="asignarValor(4)">4</button>
+    </div>
+    <div>
+      <button onclick="asignarValor(5)">5</button>
+    </div>
+    <div>
+      <button onclick="asignarValor(6)">6</button>
+    </div>
+    <div>
+      <button onclick="asignarValor('x')">x</button>
+    </div>
+  </div>
+  <div class="buttons-row">
+    <div>
+      <button onclick="asignarValor(1)">1</button>
+    </div>
+    <div>
+      <button onclick="asignarValor(2)">2</button>
+    </div>
+    <div>
+      <button onclick="asignarValor(3)">3</button>
+    </div>
+    <div>
+      <button onclick="asignarValor('-')">-</button>
+    </div>
+  </div>
+  <div class="buttons-row">
+    <div>
+      <button onclick="limpiarPantalla()">C</button>
+    </div>
+    <div>
+      <button onclick="asignarValor(0)">0</button>
+    </div>
+    <div>
+      <button onclick="asignarValor('='); ejecutarOperaciones();">=</button>
+    </div>
+    <div>
+      <button onclick="asignarValor('+')">+</button>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- <button onclick="sumarN1N2()">Sumar</button>
+  <button onclick="resta(num1.value, num2.value)">Restar</button> -->
+</body>
+
+</html>

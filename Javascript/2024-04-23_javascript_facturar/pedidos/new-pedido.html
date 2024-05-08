@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <input type="number" placeholder="Numero de pedido">
+                <!-- <input type="text" placeholder="Codigo de cliente"> -->
+                <input type="text" placeholder="Cliente">
+                <!-- <button>Guardar</button> -->
+            </div>
+            <div>
+                LISTA PRODUCTOS
+            </div>
+            <div>
+                <span>Fecha de pedido</span>
+                <input type="date">
+                <div>
+                    <span>Estado</span>
+                    <select>
+                        <option value="presupuesto">Presupuesto</option>
+                        <option value="en_progreso">En progreso</option>
+                        <option value="cancelado">Cancelado</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <span>Cliente</span>
+                <select>
+                    <option value="1">Pepito de los Palotes</option>
+                    <option value="2">Fulano Martínez</option>
+                    <option value="3">Mengano Rodríguez</option>
+                </select>
+            </div>
+            <button>Guardar</button>
+        </div>
+        <div>
+            <div>
+                <select>
+                    <option value="001">Salchichas</option>
+                    <option value="02">Patatas</option>
+                    <option value="03">Pan</option>
+                </select>
+                <input type="number" placeholder="Unidades">
+                <button>Añadir producto</button>
+            </div>
+            <table>
+                <tr>
+                    <th>Referencia</th>
+                    <th>Nombre</th>
+                    <th>Unidades</th>
+                    <th>Precio/ud</th>
+                </tr>
+                <tr>
+                    <td>000001</td>
+                    <td>Pan</td>
+                    <td>5</td>
+                    <td>5&euro;</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+
+</html>

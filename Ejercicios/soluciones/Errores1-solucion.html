@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--Se escribe utf-8 y no utf8-->
+  <title>Corrige los errores</title>
+</head>
+
+<body>
+
+  <h1>Corrige los errores</h1> <!-- h1 es suficiente relevante como para llevar un strong anidado. No es necesario -->
+
+  <h2>Índice de contenidos</h2>
+  <ul>
+    <li><a href="#ancla">Enlace 1</a></li>
+    <!--El ancla es erronea. Falta el #-->
+    <li>
+      <!--la lista estaba mal anidada-->
+      <ul>
+        <li><a href="#">Enlace 2</a></li>
+        <!--Es correcto. Una ancla sin identificador nos envía a la cabecera del documento.-->
+        <li><a href="">Enlace 3</a></li>
+        <!--No es erróneo pero se podría mejorar indicando "#". El navegador lo rellenará así por defecto cuando interprete el documento html.-->
+      </ul>
+    </li>
+    <li><a href="">Enlace 4</a></li>
+    <!--Un error común es poner el texto que queremos poner en el enlace fuera de él.-->
+  </ul>
+  <!-- Que haya aquí un espacio en blanco en el editor de código no es un problema. No se visualizará por pantalla cuando se interprete el documento web.-->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem at nostrum iure vitae veritatis officiis officia nam aperiam consequatur, dolor
+    in unde beatae labore quibusdam, nihil assumenda eligendi sint!</p>
+  <!--No debemos usar un párrafo dentro de un título. Del mismo modo, no deberíamos usar etiquetas de encabezado con fines méramente estéticos -->
+  <p>Maiores.</p>
+  <!--Maiores lo he puesto en un párrafo separado. Usar 2 <br> consecutivos con fines estéticos no es una buena praxis. Era sintácticamente correcto pero funcionalmente mejorable.-->
+
+  <p id="ancla">
+    <!--Es un error frecuente confundirse y poner el # en el id. No debemos ponerlo o si lo ponemos entonces en el enlace deberemos escribir ##ancla-->Lorem
+    ipsum dolor sit amet, consectetur adipisicing elit. Ex mollitia quia, corporis dicta, eaque itaque.
+  </p>
+
+</body>
+
+</html>

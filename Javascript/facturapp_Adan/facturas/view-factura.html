@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturapp</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <span>Número de factura</span>
+                <input type="number" value="1" disabled>
+            </div>
+            <div>
+                <span>Fecha de factura</span>
+                <input type="date" value="2024-04-23" disabled>
+            </div>
+            <div>
+                <span>Estado</span>
+                <select>
+                    <option value="no_pagada">NO PAGADA</option>
+                    <option value="pagada">PAGADA</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" checked disabled>
+                <span>Enviado por mail</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Número de pedido</span>
+                <input type="number" placeholder="Número de pedido" disabled value="1">
+            </div>
+            <div>
+                <span>Cliente</span>
+                <input type="text" placeholder="Cliente" value="Pepito de los Palotes" disabled>
+            </div>
+            <div>
+                <span>Fecha</span>
+                <input type="date" value="2024-04-22" disabled>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Unidades</th>
+                <th>Precio/ud</th>
+                <th>Precio base</th>
+                <th>% IVA</th>
+                <th>Precio total</th>
+            </tr>
+            <tr>
+                <td>000001</td>
+                <td>Azulejo azul</td>
+                <td>2</td>
+                <td>35&euro;/m2</td>
+                <td>70&euro;</td>
+                <td>21</td>
+                <td>84,7&euro;</td>
+            </tr>
+            <tr>
+                <td>000003</td>
+                <td>Azulejo negro</td>
+                <td>1</td>
+                <td>15&euro;/m2</td>
+                <td>15&euro;</td>
+                <td>21</td>
+                <td>18,15&euro;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados</title>
+    <script src="dados.js"></script>
+    <link rel="stylesheet" href="dados.css">
+</head>
+<body>
+    <div class="dados-body">
+        <div class="dado">
+            <button id="boton1" onclick="tirarDados(6, resultado1)">Lanzar dado 1-6</button>
+            <div>Resultado: <span id="resultado1"></span></div>
+        </div>
+        <div class="dado">
+            <button id="boton2" onclick="tirarDados(10, resultado2)">Lanzar dado 1-10</button>
+            <div>Resultado: <span id="resultado2"></span></div>
+        </div>
+        <div class="dado">
+            <button id="boton3" onclick="tirarDados(50, resultado3)">Lanzar dado 1-50</button>
+            <div>Resultado: <span id="resultado3"></span></div>
+        </div>
+        <div class="dado">
+            <button id="boton4" onclick="tirarDados(100, resultado4)">Lanzar dado 1-100</button>
+            <div>Resultado: <span id="resultado4"></span></div>
+        </div>
+        <div class="dado">
+            <button onclick="lanzarTodos([boton1, boton2, boton3, boton4])">Lanzar todos</button>
+        </div>
+    </div>
+</body>
+</html>

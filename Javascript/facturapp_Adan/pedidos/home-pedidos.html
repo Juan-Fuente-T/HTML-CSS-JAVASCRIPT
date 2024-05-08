@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturapp</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <input type="text" placeholder="Numero pedido" />
+                <input type="text" placeholder="Código cliente" />
+                <input type="text" placeholder="Nombre cliente" />
+                <input type="text" placeholder="NIF cliente" />
+                <div>
+                    <span>Fecha pedido:</span>
+                    <input type="date" />
+                </div>
+            </div>
+            <div>
+                <button><a href="new-pedido.html">Nuevo pedido</a></button>
+            </div>
+        </div>
+        <div>
+            <button>Refrescar</button>
+        </div>
+        <table>
+            <tr>
+		        <th>Numero de pedido</th>
+		        <th>Cliente</th>
+		        <th>Fecha</th>
+		        <th>Estado</th>
+		        <th>Ver pedido</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pepito de los Palotes</td>
+                <td>22/04/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="view-pedido.html?num_pedido=1">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Fulano Martínez</td>
+                <td>27/05/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="view-pedido.html?num_pedido=2">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mengano Rodríguez</td>
+                <td>30/05/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="view-pedido.html?num_pedido=3">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pepito de los Palotes</td>
+                <td>30/05/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="view-pedido.html?num_pedido=4">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

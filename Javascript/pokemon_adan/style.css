@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Lugrasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Lugrasimo&family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jersey+10&family=Lugrasimo&family=Sedgwick+Ave+Display&display=swap");
+
+.start-button {
+  font-family: "Sedgwick Ave Display";
+  font-size: 40px;
+  padding: 8px 16px;
+}
+
+.battle {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.run-battle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pokemons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pokemon {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 8px;
+  background-color: lightcyan;
+}
+
+.barra-vida-container {
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  overflow-x: hidden;
+}
+
+.barra-vida {
+  font-family: "Jersey 10";
+  font-size: 24px;
+  color: green;
+  background-color: lightgreen;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.lista-ataques {
+  list-style-type: none;
+  padding: 4px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.lista-ataques li {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.lista-ataques button {
+  /* font-family: "Lugrasimo display"; */
+  font-family: "Dancing Script";
+  font-size: 20px;
+  margin: 4px;
+  padding: 4px 8px;
+}

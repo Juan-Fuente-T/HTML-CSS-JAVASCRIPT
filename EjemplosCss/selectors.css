@@ -1,0 +1,54 @@
+/*usando + el primero que esta despues, aunque no justo despues*/
+h2 + p {
+  border: 2px solid blue;
+}
+/*usando > tiene que estar justo despues*/
+ul > li {
+  border: 2px solid rgb(255, 145, 0);
+}
+
+/*usando > los elementos que estan despues pero no justo despues*/
+div li {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid rgb(43, 255, 0);
+}
+
+div p {
+  border: 2px solid red;
+  p:first-letter {
+    font-size: 3em;
+  }
+}
+h1,
+div,
+h2,
+p {
+  border: 2px solid red;
+}
+/* div > p {
+  border: 2px solid rgb(255, 0, 153);
+  p:first-letter {
+    font-size: 3em;
+  }
+} */
+div h2:first-letter {
+  font-size: 3em;
+}
+
+h1 + div {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 80px;
+}
+a:link {
+  color: blue;
+}
+a:visited {
+  color: rgb(4, 255, 0);
+}
+a:hover {
+  color: indigo;
+}
+a:active {
+  color: rgb(130, 0, 0);
+}

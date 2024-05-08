@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+    <script src="script-clases.js"></script>
+    <link rel="stylesheet" href="styles.css"/> 
+</head>
+<body>
+    <div class="contenedor-titulo">
+        <h1>Combate de Pokemons</h1>
+    </div>
+    <div class="containerButton">
+        <div class="imagenPequeña">
+            <img src="./assets/pokemenonMiniI.png" alt="">
+        </div>
+        <div class="botonIntro">
+            <button class="combatButton" onclick="empezarCombate(mi_pkmn_html_el, oponente_pkmn_html_el)">Empezar combate</button>
+        </div>
+        <div class="imagenPequeña"s>
+            <img src="./assets/pokemenonMiniD.png" alt="">
+        </div>
+    </div>
+    <div class="contenedorAvisoDerrota">
+        <!-- <img class="pokeballImagen" src="./assets/pokeballImagen.png" alt=""> -->
+        <p id="aviso-derrota"></p>
+    </div>
+    <div class="containerPokemons">
+        <div id="mi_pkmn_html_el">
+            <p>-- TU POKEMON --</p>
+            <div class="contenedor-barra-vida">
+                <div class="hp-barra-vida">HP</div>
+                <div class="barra-vida">SALUD</div>
+            </div>
+            
+            <div class="saludRestada">
+                DAÑO CAUSADO
+                <!-- <span>DAÑO CAUSADO: <input type="number" class="saludRestada" value = '' readonly></span>  -->
+             </div>
+            <div class="contenedor-ataques">
+                <ul class="lista-ataques">ATAQUES</ul>
+                <img class="pokeballImagen" src="./assets/pokeballImagen.png" alt="Una pokeball en miniatura">      
+            </div>
+        </div>
+        <div id="oponente_pkmn_html_el">
+            <p>-- POKEMON RIVAL --</p>
+            <div class="contenedor-oponente-barra-vida">
+                <div class="hp-barra-vida">HP</div>
+                <div class="barra-vida">SALUD</div>
+            </div>
+
+            <div class="saludRestadaOpo">
+                DAÑO CAUSADO
+                <!-- <span>DAÑO CAUSADO: <input type="number" class="saludRestada" value = '' readonly></span>  -->
+             </div>
+            <div class="contenedor-imagen">
+                <img class="imagen">
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- <div class="saludRestada"></div> -->
+       <!-- <span>DAÑO CAUSADO: <input type="number" id="saludRestada" value = '' readonly></span>  -->
+    </div>
+    <div>
+       <!-- <span>DAÑO CAUSADO: <input type="number" id="saludRestada" value = '' readonly></span>  -->
+    </div>
+</body>
+</html>

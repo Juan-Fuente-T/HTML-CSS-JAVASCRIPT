@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturapp</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <span>Número de pedido</span>
+                <input type="number" placeholder="Número de pedido" disabled value="1">
+            </div>
+            <div>
+                <span>Cliente</span>
+                <input type="text" placeholder="Cliente" value="Pepito de los Palotes">
+            </div>
+            <div>
+                <span>Fecha</span>
+                <input type="date" value="2024-04-22">
+            </div>
+            <div>
+                <span>Estado</span>
+                <select>
+                    <option value="presupuesto">Presupuesto</option>
+                    <option value="en_progreso" selected>En progreso</option>
+                    <option value="cancelado">Cancelado</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </div>
+            <button>Generar factura</button>
+            <button><a href="../facturas/view-factura.html?num_fact=1">Ver factura</a></button>
+        </div>
+        <table>
+            <tr>
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Unidades</th>
+                <th>Precio/ud</th>
+            </tr>
+            <tr>
+                <td>000001</td>
+                <td>Azulejo azul</td>
+                <td>2</td>
+                <td>35&euro;/m2</td>
+            </tr>
+            <tr>
+                <td>000003</td>
+                <td>Azulejo negro</td>
+                <td>1</td>
+                <td>15&euro;/m2</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

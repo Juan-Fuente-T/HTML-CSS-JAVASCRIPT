@@ -1,0 +1,42 @@
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e0898;
+}
+header h1 {
+  color: #2e0898;
+  text-align: center;
+  width: 100%;
+  background-color: #ffd700;
+  margin: 10px 15px;
+}
+header img {
+  width: 50px;
+  float: right;
+}
+.product-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  margin: 1%;
+  background-color: white;
+}
+
+.product img {
+  width: 40%;
+}

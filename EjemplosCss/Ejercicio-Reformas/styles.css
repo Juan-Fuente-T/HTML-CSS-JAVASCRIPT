@@ -1,0 +1,194 @@
+header span {
+  margin: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+body {
+  background-color: rgb(211, 206, 201);
+  padding-bottom: 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  margin: 10px;
+}
+nav a {
+  margin: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4%;
+}
+#titulo {
+  background-color: white;
+  border: 0px;
+  height: 40px;
+}
+h1 {
+  padding: 16px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(241, 233, 222);
+  border: 2px solid rgb(251, 175, 82);
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.main-container p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 80px;
+}
+.main-container img {
+  justify-content: center;
+  width: 75%;
+  margin: 50px auto;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(241, 233, 222);
+  width: 100%;
+  text-align: center;
+  padding: 35px;
+  position: fixed;
+  bottom: 0;
+}
+
+/******************* Inicio de estilos especificos de Servicios ******************/
+
+ul {
+  margin-top: 50px;
+  margin-left: 5%;
+}
+
+/******************* Inicio de estilos especificos de Precios ******************/
+.precios-container {
+  height: 600px;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("./assets/casa_rotisima.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  padding: 10%;
+}
+
+table {
+  margin: auto;
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border: 2px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(211, 206, 201);
+}
+
+/******************* Inicio de estilos especificos de Formulario ******************/
+.formulario-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex-grow: 20;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.item label {
+  font-size: 1.5rem;
+  padding-bottom: 2%;
+}
+.item input {
+  height: 35px;
+  border: 2px solid rgb(251, 175, 82);
+  border-radius: 4px;
+}
+.item textarea {
+  height: 100px;
+  border: 2px solid rgb(251, 175, 82);
+  border-radius: 4px;
+}
+
+.item-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 7px;
+  gap: 2%;
+}
+.item-buttons button {
+  width: 150px;
+  padding: 10px;
+  margin-top: 2%;
+  border-radius: 6px;
+  border: 2px solid rgb(251, 175, 82);
+}
+span {
+  display: inline;
+  flex-wrap: nowrap;
+}
+span img {
+  width: 30%;
+  margin: 5px;
+}
+
+li {
+  font-size: large;
+  padding-top: 6%;
+  padding-left: 1%;
+} /******************* Inicio de estilos especificos de Ubicacion ******************/
+#parrafo-ubicacion {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  margin: 4%;
+  padding-bottom: 30px;
+}

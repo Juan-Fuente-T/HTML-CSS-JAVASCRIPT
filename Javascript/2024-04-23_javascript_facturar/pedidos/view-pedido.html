@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    
+    <div>
+        PEDIDOS - PEDIDOS
+        <div>
+        <div>
+            <span>Numero de pedido</span>
+            <input type="number" placeholder="Número de pedido" disabled value="1">
+        </div>  
+        <div>
+            <span>Cliente</span>
+            <input type="text" placeholder="Cliente" value="Paco Parra">
+        </div>  
+        <div>
+            <span>Fecha</span>
+            <input type="date" value="2024-04-22">
+        </div> 
+        <div>
+            <span>Estado</span>
+            <select>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="en_progreso" selected>En progreso</option>
+                <option value="cancelado">Cancelado</option>
+                <option value="finalizado">Finalizado</option>
+            </select>
+        </div> 
+        <div>
+            <button><a href="">Generar factura</a></button>
+            <button><a href="">Ver factura</a></button>
+        </div> 
+    </div>
+        
+        <div>
+            <div>
+                <input type="text" placeholder="Número de pedido">
+                <div>
+                    <span>Fecha de pedido</span>
+                    <input type="date" >
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Unidades</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Salchichas</td>
+                <td>1;</td>
+                <td>2&euro;/Ud</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Patatas</td>
+                <td>1;</td>
+                <td>1.5&euro;/Kilo</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Pan</td>
+                <td>1</td>
+                <td>1&euro;/Kilo</td>
+            </tr>
+        </table> 
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+</html>

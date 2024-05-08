@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <input type="text" placeholder="Referencia"/>
+                <input type="text" placeholder="Nombre"/>
+            </div>
+            <div>
+                <button><a href="new-producto.html">Nuevo producto</a></button>
+            </div>
+        </div>
+        <div>
+            <button>Refrescar</button>
+        </div>
+        <table>
+            <tr>
+                <th>Referencia</th>
+                <th>Nombre</th>
+                <th>Precio/Ud</th>
+                <th>Tipo Ud</th>
+                <th>%IVA</th>
+
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Salchichas</td>
+                <td>2&euro;</td>
+                <td>Unidad</td>
+                <td>21</td>
+                <td>
+                    <button>
+                        <a href="view-producto.html?referencia=001">Ver</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Patatas</td>
+                <td>1.5&euro/Kilo;</td>
+                <td>Kilo</td>
+                <td>21</td>
+                <td>
+                    <button>
+                        <a href="view-producto.html?referencia=002">Ver</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Pan</td>
+                <td>1&euro;</td>
+                <td>Unidad</td>
+                <td>10</td>
+                <td>
+                    <button>
+                        <a href="view-producto.html?referencia=003">Ver</a>
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+
+</html>

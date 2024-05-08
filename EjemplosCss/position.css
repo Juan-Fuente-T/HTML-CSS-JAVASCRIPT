@@ -1,0 +1,85 @@
+div {
+  width: 1000px;
+  background-color: red;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  /* margin: 1%; */
+}
+
+.static div {
+  position: static;
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+}
+
+.relative div {
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+}
+
+.relative #relative {
+  width: 90%;
+  background-color: rgb(4, 250, 4);
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+}
+.fixed div {
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+}
+
+.fixed #fixed {
+  position: fixed;
+  right: 200px;
+  top: 390px;
+  width: 90%;
+  width: 300px;
+}
+.absolute div {
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+}
+.absolute #absolute {
+  position: absolute;
+  left: 20px;
+  top: 530px;
+}
+.zindex div {
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+  z-index: 2;
+}
+.zindex #zindexarriba {
+  position: relative;
+  background-color: rgb(228, 179, 179);
+  z-index: 1;
+}
+.zindex #zindexdebajo {
+  position: relative;
+  left: 20px;
+  top: 10px;
+  z-index: 0;
+}
+
+.visibility div {
+  background-color: rgb(4, 250, 4);
+  width: 90%;
+}
+.visibility #hidden {
+  visibility: hidden;
+}
+.visibility #collapse {
+  visibility: collapse;
+}
+
+.float div {
+  background-color: rgb(4, 250, 4);
+  width: 40%;
+}
+.float #left {
+  float: left;
+}
+.float #right {
+  float: right;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <input type="text" placeholder="Numero de pedido" />
+                <input type="text" placeholder="Codigo Cliente" />
+                <input type="text" placeholder="Nombre Cliente" />
+                <input type="text" placeholder="NIF Cliente" />
+                <div>
+                    <span>Fecha pedido</span>
+                    <input type="date" />
+                </div>
+            </div>
+            <div>
+                <button><a href="new-pedido.html">Nuevo pedido</a></button>
+            </div>
+        </div>
+        <div>
+            <button>Refrescar</button>
+        </div>
+        <table>
+            <tr>
+                <th>Numero pedido</th>
+                <th>Codigo cliente</th>
+                <!-- <th>Nombre cliente</th>Esto lo tengo solo yo -->
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Ver pedido</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <!-- <td>Paco Parra</td>Esto lo tengo solo yo -->
+                <td>2024-03-19</td>
+                <td>Cancelado</td>    
+                <td><button> <a href="./view-pedido.html?codigo=1">Ver</a></button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <!-- <td>Gonzalo Gómez</td>Esto lo tengo solo yo -->
+                <td>2024-04-21</td>
+                <td>Pendiente</td>
+                <td><button> <a href="./view-pedido.html?codigo=2">Ver</a></button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <!-- <td>Luis Lustres</td>Esto lo tengo solo yo -->
+                <td>2024-04-21</td>
+                <td>Presupuesto</td>
+                <td><button> <a href="./view-pedido.html?codigo=3">Ver</a></button></td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>1</td>
+                <!-- <td>Paco Parra</td>Esto lo tengo solo yo -->
+                <td>2024-04-22</td>
+                <td>Presupuesto</td>
+                <td><button> <a href="./view-pedido.html?codigo=4">Ver</a></button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+
+</html>

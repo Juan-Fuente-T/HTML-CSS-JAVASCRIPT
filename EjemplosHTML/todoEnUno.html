@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Tabla</title>
+</head>
+<body>
+    <!-- LISTAS Y TABLAS -->
+    <div>
+
+    </div>
+    <!-- Tabla-->
+    <div>
+        <!-- tabla normal Nombre, apellidos, fecha nac., telef., dni -->
+        <table>
+            <caption>Lista de alumnos</caption>
+            <tr> 
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Fecha de nacimiento</th>
+                <th>Teléfono</th>
+                <th>DNI</th>
+            </tr>
+            <tr>
+                <td>Paco </td>
+                <td>Porras</td>
+                <td>33/04/1924</td>
+                <td>111222333</td>
+                <td>111222333P</td>
+            </tr>
+            <tr>
+                <td>Constante</td>
+                <td>Remoto</td>
+                <td>67/09/1899</td>
+                <td>333444555</td>
+                <td>333444555C</td>
+            </tr>
+            <tr>
+                <td>Vicente</td>
+                <td>Lescopio</td>
+                <td>01/09/2025</td>
+                <td>777888999</td>
+                <td>777888999V</td>
+            </tr>
+        </table>
+    </div>
+    
+        <!-- tabla calculadora -->
+    <div>
+        <br><br>
+        <table  style="text-align: center; vertical-align: middle;">
+            <caption>Tabla calculadora</caption>
+            <tr>
+                <td style="border: 1px solid black;">1</td>
+                <td style="border: 1px solid black;">2</td>
+                <td style="border: 1px solid black;">3</td>
+                <td rowspan="2" style="border: 1px solid black;">+</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">4</td>
+                <td style="border: 1px solid black;">5</td>
+                <td style="border: 1px solid black;">6</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">7</td>
+                <td style="border: 1px solid black;">8</td>
+                <td style="border: 1px solid black;">9</td>
+                <td rowspan="2" style="border: 1px solid black;">-</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border: 1px solid black;">0</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <br><br>
+        <table>
+        <caption>Esto es una tabla</caption>
+        <tr> 
+            <th>Compañia</th>
+            <th>Nombre</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Empresa A</td>
+            <td>Paco </td>
+            <td>Brasil</td>
+        </tr>
+        <tr>
+            <td>Empresa B</td>
+            <td>Pichurri </td>
+            <td>Japón</td>
+        </tr>
+    </table>
+</div>
+
+<!-- FORM -->
+<!-- formulario -->
+<!--label a cada imput placeholder 
+    nombre, apellidos, fecha nac ,tel, dni, paswword 
+    2 menus desplegables uno marca de coches y otro modelos
+    2 checkbox quieres asociarte...
+    2 radiobuton diferentes 
+    2 botones una de guardar y otro de reset
+-->
+<div>
+    <p>Formulario de prueba</p>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Fulano"><br>
+        <label for="apellidos">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Fulanez"><br>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="number" id="telefono" name="telefono" limit="0" placeholder="666555555"><br>
+        <label for="DNI">DNI:</label><br>
+        <input type="text" id="DNI" name="DNI" placeholder="11122233A"><br>
+        
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" placeholder="**********"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemblo@jemail.com"><br>
+        
+        <select name="coches" id="coches">
+            <option value="">Selecciona una opcion</option>
+            <option value="citroen">Citroen</option>
+            <option value="ford">Ford</option>
+            <option value="renault">Renault</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="dacia">Dacia</option>
+            <option value="kia">Kia</option>
+          </select><br>
+        <select name="modelo" id="modelo">
+            <option>Selecciona un modelo</option>
+            <option value="saxo">Saxo</option>
+            <option value="xara">Xara</option>
+            <option value="c-4">C-4</option>
+            <option value="fiesta">Fiesta</option>
+            <option value="focus">Focus</option>
+            <option value="mondeo">Mondeo</option>
+            <option value="clio">Clio</option>
+            <option value="megane">Megane</option>
+            <option value="scenic">Scenic</option>
+            <option value="duster">Duster</option>
+            <option value="sandero">Sandero</option>
+            <option value="logan">Logan</option>
+        </select><br>
+
+        <input type="checkbox" id="coche1" name="coche1" value="gasolina">
+        <label for="coche1"> Gasolina </label><br>
+        <input type="checkbox" id="coche2" name="coche2" value="gasoil">
+        <label for="coche2"> Gasoil </label><br>
+        <input type="checkbox" id="coche3" name="coche3" value="electrico">
+        <label for="coche3"> Eléctrico </label><br>
+        <p>--------------------------------</p>
+        <input type="checkbox" id="propiedad1" name="propiedad1" value="compra">
+        <label for="propiedad1"> Compra </label><br>
+        <input type="checkbox" id="propiedad2" name="propiedad2" value="alquiler">
+        <label for="propiedad2"> Alquiler  </label><br>
+        <p>--------------------------------</p>
+        
+        <input type="radio" id="nuevo" name="estado" value="nuevo">
+        <label for="nuevo">Nuevo</label><br>
+        <input type="radio" id="usado" name="estado" value="usado">
+        <label for="usado">Usado</label><br>
+        <input type="radio" id="km-0" name="estado" value="km-0">
+        <label for="km-0">Kilometro 0</label><br>
+        <p>--------------------------------</p>
+        
+        
+        <input type="radio" id="todoterreno" name="tipocoche" value="Todoterreno">
+        <label for="todoterreno">Todoterreno</label><br>
+        <input type="radio" id="suv" name="tipocoche" value="Suv">
+        <label for="suv">Suv</label><br>
+        <input type="radio" id="deportivo" name="tipocoche" value="Deportivo">
+        <label for="deportivo">Deportivo</label><br>
+        <input type="radio" id="familiar" name="tipocoche" value="Familiar">
+        <label for="familiar">Familiar</label><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset">   
+        <button onclick="" value="Submit">Enviar</button>
+        <button type="reset">Reset</button>
+        
+        <br><br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+
+        <br><br>
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+        </select>
+      </form>
+</div>
+
+
+
+</body>
+</html>

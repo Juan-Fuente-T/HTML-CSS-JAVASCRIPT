@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+    <script src="script-clases.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="battle">
+        <div class="run-battle">
+            <button class="start-button" onclick="empezarCombate(mi_pkmn_html_el, oponente_pkmn_html_el)">Empezar combate</button>
+        </div>
+        <div id="cartas_pokemons" class="pokemons" style="visibility: hidden;">
+            <div id="mi_pkmn_html_el" class="pokemon">
+                <div class="barra-vida-container">
+                    <div class="barra-vida"></div>
+                </div>
+                <ul class="lista-ataques"></ul>
+            </div>
+            <div id="oponente_pkmn_html_el" class="pokemon">
+                <div class="barra-vida-container">
+                    <div class="barra-vida"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap");
+
+.nav-logo {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 26px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgb(183, 233, 233);
+}
+.nav-logo-img {
+  height: 100%;
+}
+.nav-logo-nombre {
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-barra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: rgb(183, 233, 233);
+  position: sticky;
+  top: 0;
+}
+.nav-barra-button {
+  color: black;
+  flex-grow: 1;
+  background-color: rgb(183, 233, 233);
+  border: none;
+  margin: 0 0.5rem;
+}
+.nav-barra-button a {
+  padding: 12px;
+  text-decoration: none;
+}
+.nav-barra-button a:hover {
+  background-color: rgb(112, 203, 203);
+  border-radius: 8px;
+}
+.web-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.web-footer-space {
+  height: 30px;
+}
+.web-footer-content {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: rgb(183, 233, 233);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.home-web-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  padding: 8px;
+  height: 50%;
+  font-family: "Jacquard 24";
+}

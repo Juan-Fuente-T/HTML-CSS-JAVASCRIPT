@@ -1,0 +1,73 @@
+.relative {
+  border: 2px solid red;
+  width: 150px;
+  position: relative;
+  right: 10px;
+  top: 20px;
+}
+
+.relative #before {
+  border: 2px solid rgb(0, 0, 0);
+  position: static;
+}
+.relative #after {
+  border: 2px solid rgb(255, 0, 0);
+  position: static;
+  right: 20px;
+  top: 20px;
+}
+
+.fixed {
+  border: 2px solid rgb(0, 0, 0);
+  width: 150px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.absolute {
+  border: 2px solid rgb(31, 50, 160);
+  width: 150px;
+  position: fixed;
+  left: 520px;
+  top: 220px;
+  background-color: rgb(213, 213, 220);
+}
+.zindex {
+  border: 2px solid rgb(160, 31, 31);
+  width: 150px;
+  position: fixed;
+  left: 480px;
+  top: 180px;
+  z-index: -1;
+  background-color: rgb(220, 213, 213);
+}
+.visibility {
+  border: 2px solid rgb(160, 31, 31);
+  width: 500px;
+  position: fixed;
+  left: 300px;
+  top: 50px;
+}
+.visibility #hidden {
+  visibility: hidden;
+}
+.visibility #collapse {
+  visibility: collapse;
+}
+
+.float {
+  border: 2px solid rgb(160, 31, 31);
+  width: 500px;
+  position: fixed;
+  left: 300px;
+  bottom: 50px;
+}
+.float #left {
+  float: right;
+}
+.float #right {
+  float: right;
+}
+.float #left2 {
+  float: left;
+}

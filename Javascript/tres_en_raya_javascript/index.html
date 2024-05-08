@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div style="display: flex; flex-direction: row;">
+        <div id="celda_00" onclick="ejecutarTurno(0, 0)" style="border: 1px solid black; padding: 4px">00</div>
+        <div id="celda_01" onclick="ejecutarTurno(0, 1)" style="border: 1px solid black; padding: 4px">01</div>
+        <div id="celda_02" onclick="ejecutarTurno(0, 2)" style="border: 1px solid black; padding: 4px">02</div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div id="celda_10" onclick="ejecutarTurno(1, 0)" style="border: 1px solid black; padding: 4px">10</div>
+        <div id="celda_11" onclick="ejecutarTurno(1, 1)" style="border: 1px solid black; padding: 4px">11</div>
+        <div id="celda_12" onclick="ejecutarTurno(1, 2)" style="border: 1px solid black; padding: 4px">12</div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div id="celda_20" onclick="ejecutarTurno(2, 0)" style="border: 1px solid black; padding: 4px">20</div>
+        <div id="celda_21" onclick="ejecutarTurno(2, 1)" style="border: 1px solid black; padding: 4px">21</div>
+        <div id="celda_22" onclick="ejecutarTurno(2, 2)" style="border: 1px solid black; padding: 4px">22</div>
+    </div>
+    <button onclick="reiniciarPartida">reiniciar</button>
+</body>
+</html>

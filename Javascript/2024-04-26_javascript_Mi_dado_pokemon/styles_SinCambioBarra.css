@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
+
+body {
+  font-family: "Jersey 20", Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url("./assets/pokemon_fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contenedor-titulo {
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1em;
+  color: rgba(186, 0, 0, 0.883);
+}
+.containerButton {
+  display: flex;
+  justify-content: space-between;
+}
+.botonIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenPequeña {
+  margin: 0px 60px;
+}
+
+.containerPokemons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4em;
+}
+
+.barra-vida {
+  text-wrap: nowrap;
+  height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: green;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+  background-color: lightgreen;
+  white-space: nowrap;
+}
+.saludRestada {
+  height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+}
+
+.saludRestadaOpo {
+  height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+}
+
+.combatButton {
+  font-family: "Jersey 20", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /* color: rgb(255, 255, 255); */
+  /* color: darkslategray; */
+  color: ghostwhite;
+  width: 12em;
+  padding: 0.8em;
+  background-color: rgba(186, 0, 0, 0.883);
+  border: none;
+  border-radius: 8px;
+}
+.combatButton:hover {
+  width: 13em;
+  background-color: rgba(255, 2, 2, 0.883);
+}
+.contenedorAvisoDerrota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: -80px; */
+}
+
+#mi_pkmn_html_el {
+  /* height: 700px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+  padding: 2em;
+  margin: 1%;
+  white-space: nowrap;
+}
+#mi_pkmn_html_el p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  padding: 0.6em;
+}
+
+#oponente_pkmn_html_el {
+  /* height: 700px; */
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+  padding: 2em;
+  margin: 1%;
+  white-space: nowrap;
+}
+#oponente_pkmn_html_el p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  padding: 0.6em;
+}
+
+.contenedor-ataques {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-ataques {
+  font-size: 1.2em;
+  width: 50%;
+  padding: 1em;
+  margin-top: 2%;
+  border: 2px solid rgb(198, 0, 0);
+  border-radius: 8px;
+}
+
+.pokeballImagen {
+  justify-content: center;
+  width: 15%;
+}
+
+.lista-ataques li {
+  display: inline;
+}
+.lista-ataques button {
+  display: flex;
+  align-items: center;
+  font-family: "Jersey 20", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  height: 2.2em;
+  letter-spacing: 2px;
+  color: ghostwhite;
+  background-color: rgba(186, 0, 0, 0.883);
+  border: none;
+  border-radius: 8px;
+  margin: 0.5em 0;
+  padding: 15px;
+}
+.lista-ataques button:hover {
+  background-color: rgba(255, 2, 2, 0.883);
+  margin: 0.5em 0.5em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  color: ghostwhite;
+  background-color: rgb(198, 0, 0);
+  height: 2em;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+}
+.contenedor-imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.contenedor-imagen img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: auto;
+  margin-top: 15px;
+}
+#aviso-derrota {
+  background-color: initial;
+  color: rgb(198, 0, 0);
+  font-size: 3em;
+  font-weight: bold;
+  text-decoration-line: underline;
+  height: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturapp</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <span>Código</span>
+                <input type="number" placeholder="Código" disabled value="1">
+            </div>
+            <div>
+                <span>NIF</span>
+                <input type="text" placeholder="NIF" value="45784596V">
+            </div>
+            <div>
+                <span>Nombre</span>
+                <input type="text" placeholder="Nombre" value="Pepito de los Palotes">
+            </div>
+            <div>
+                <span>Email</span>
+                <input type="email" placeholder="Email" value="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <span>Dirección</span>
+                <textarea placeholder="Dirección" cols="30" rows="10">C/Piruleta, N5, Pontevedra, Pontevedra, C.P: 36555</textarea>
+            </div>
+        </div>
+        <div>
+            <span>Filtros</span>
+            <div>
+                <input type="text" placeholder="Número de pedido">
+                <div>
+                    <span>Fecha de pedido</span>
+                    <input type="date">
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+		        <th>Numero de pedido</th>
+		        <th>Fecha</th>
+		        <th>Estado</th>
+                <th>Ver pedido</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>22/04/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="../pedidos/view-pedido.html?num_pedido=1">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>30/05/2024</td>
+                <td>PRESUPUESTO</td>
+                <td>
+                    <button>
+                        <a href="../pedidos/view-pedido.html?num_pedido=4">
+                            Ver
+                        </a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

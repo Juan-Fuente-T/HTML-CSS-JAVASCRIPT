@@ -1,0 +1,5 @@
+.buttons-row {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid rgb(16, 0, 0);
+}

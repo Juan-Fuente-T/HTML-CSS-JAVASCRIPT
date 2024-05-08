@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo eventos</title>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div>
+    <span>Numero 1</span>
+    <input id="num1" oninput="autoCalcula(num1.value, num2.value)" name="num1" type="number"/>
+  </div>
+  <div>
+    <span>Numero 2</span>
+    <input id="num2" oninput="autoCalcula(num1.value, num2.value)" name="num2" type="number"/>
+  </div>
+  <p>Resultado: <span id="resultado"></span></p>
+  <p>Autosuma: <span id="autoSum"></span></p>
+  <p>Autoresta: <span id="autoRes"></span></p>
+  <p id="resultado"></p>
+  <button onclick="sumarN1N2()">Sumar</button>
+  <button onclick="resta(num1.value, num2.value)">Restar</button>
+  <div onclick="sumarN1N2()" style=" border: 2px solid rgb(21, 0, 49); border-radius: 6px; width: 390px; padding: 12px; margin: 15px; background-color: rgb(213, 187, 247); cursor:pointer" >Sumar con div, un evento no tiene que estar en un boton</div>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+/* Estilos generales para los contenedores */
+.container1 {
+  border: 1px solid black;
+  margin: 0px;
+  padding: 10px;
+  text-transform: capitalize;
+  background-color: brown;
+  color: antiquewhite;
+  max-width: 300px;
+}
+
+.uno {
+  background-color: green;
+  border: 2px solid black;
+}
+
+.dos {
+  background-color: green;
+  border: 2px solid black;
+  
+}
+
+.tres {
+  background-color: green;
+  border: 2px solid black;
+}
+
+.relative {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 300px;
+  }
+  
+  .uno1 {
+    background-color: green;
+    border: 2px solid black;
+    position: relative;
+    
+  }
+  
+  .dos1 {
+    background-color: green;
+    border: 2px solid black;
+    position: relative;
+    left: -25px;
+    bottom: 10px;
+  }
+  
+  .tres1 {
+    background-color: green;
+    border: 2px solid black;
+  }
+  
+  .absolute {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 300px;
+  }
+  
+  .uno2 {
+    background-color: green;
+    border: 2px solid black;
+   
+    
+  }
+  
+  .dos2 {
+    background-color: green;
+    border: 2px solid black;
+    position: absolute;
+    top: 270px;
+    left: 75px;
+  }
+  
+  .tres2 {
+    background-color: green;
+    border: 2px solid black;
+  }
+  
+ .fixed{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 300px;
+  }
+  
+  .uno3 {
+    background-color: green;
+    border: 2px solid black;
+   
+    
+  }
+  
+  .dos3 {
+    background-color: green;
+    border: 2px solid black;
+    position:fixed;
+    top: 450px;
+    left: 95px;
+  }
+  
+  .tres3 {
+    background-color: green;
+    border: 2px solid black;
+  }
+ 
+  .left{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 300px;
+  }
+  
+  .uno4 {
+    background-color: green;
+    border: 2px solid black;
+   
+    
+  }
+  
+  .dos4 {
+    background-color: green;
+    border: 2px solid black;
+   
+  }
+  
+  .tres4 {
+    background-color: green;
+    border: 2px solid black;
+    position: relative;
+    bottom: 10px;
+    left: -25px;
+    z-index: 4;
+  }
+  .cuatro4{
+    background-color: green;
+    border: 2px solid black;
+
+  }
+
+  .visibility{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 300px;
+  }
+  
+  .uno5 {
+    background-color: green;
+    border: 2px solid black;
+   
+    
+  }
+  
+  .dos5 {
+    background-color: green;
+    border: 2px solid black;
+    visibility: hidden;    
+    display: none;
+  }
+  
+  .tres5 {
+    background-color: green;
+    border: 2px solid black;
+  }  
+  
+  .float{
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: brown;
+    color: antiquewhite;
+    max-width: 800px;
+    overflow: auto;
+  }
+  
+  .uno6 {
+    background-color: green;
+    border: 2px solid black;
+    float: left;
+    width: 40%;
+   
+    
+  }
+  
+  .dos6 {
+    background-color: green;
+    border: 2px solid black;
+   float: right;
+   width: 40%;
+    
+  }
+  
+  .tres6 {
+    background-color: green;
+    border: 2px solid black;
+    float: left;
+    width: 40%;
+  }  

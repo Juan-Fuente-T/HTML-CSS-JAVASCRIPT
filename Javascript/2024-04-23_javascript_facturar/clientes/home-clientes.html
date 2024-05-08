@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    <div>
+        <div>
+            <div>
+                <input type="text" placeholder="Código" />
+                <input type="text" placeholder="NIF" />
+                <input type="text" placeholder="Nombre" />
+            </div>
+            <div>
+                <button><a href="new-cliente.html">Nuevo cliente</a></button>
+            </div>
+        </div>
+        <div>
+            <button>Refrescar</button>
+        </div>
+        <table>
+            <tr>
+                <th>Codigo</th>
+                <th>NIF</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Ver cliente</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>111222333P</td>
+                <td>Paco Parra</td>
+                <td>Villarriba</td>
+                <td><button> <a href="./view-cliente.html?codigo=1">Ver</a></button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>444555666G</td>
+                <td>Gonzalo Gómez</td>
+                <td>Villabajo</td>
+                <td><button> <a href="./view-cliente.html?codigo=2">Ver</a></button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>777888999L</td>
+                <td>Luis Lustres</td>
+                <td>Villamedio</td>
+                <td><button> <a href="./view-cliente.html?codigo=3">Ver</a></button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+</html>

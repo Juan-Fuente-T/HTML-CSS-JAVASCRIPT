@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+
+  /* display: grid;
+  place-content: center; */
+}
+#jugadoresForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  padding: 2%;
+  margin: 2%;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  background-image: url("./assets/pokemon-fondo.jpg");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
+}
+#jugadoresForm input {
+  margin: 4% 0px;
+}
+#jugadoresForm button {
+  height: 30px;
+  width: 150px;
+  border-radius: 6px;
+  background-color: rgb(247, 247, 237);
+}
+
+#contenedorJuego {
+  visibility: hidden;
+  height: 0px;
+  background-image: url("./assets/pokemon_fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contenedorCasillas {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* grid-gap: 20px; */
+}
+
+/* .contenedorCasillas p {
+  border: 2px solid red;
+  width: 200px;
+  height: 200px;
+} */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cellButton {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 130px;
+  color: #261f05;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #261f05;
+  border-radius: 6px;
+  margin: 3px;
+  cursor: pointer;
+  background-image: url("./assets/pokemon-fondo.jpg");
+  background-position: center;
+  background-size: contain;
+  line-height: 150px;
+  text-align: center;
+  vertical-align: center;
+}
+.avisoJugador {
+  margin-bottom: 100px;
+}
+.containerButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.containerButtons button {
+  font-size: 1.2em;
+  height: 50px;
+  width: 200px;
+  margin: 1%;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: rgb(247, 247, 237);
+}
+.containerAvisos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.containerAvisos p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2em;
+  height: 35px;
+  width: 60%;
+  border: 2px solid #261f05;
+  border-radius: 8px;
+  padding-left: 1%;
+  background-color: rgb(247, 247, 237);
+}

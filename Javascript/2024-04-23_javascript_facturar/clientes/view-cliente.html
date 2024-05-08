@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaApp</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="web-body">
+    <header class="nav-logo">
+        <img class="nav-logo-img" src="../assets/logo.png" alt="logo_empresa" />
+        <span class="nav-logo-nombre">Nombre empresa</span>
+
+    </header>
+    <nav class="nav-barra">
+        <button class="nav-barra-button"><a href="../home.html"> Inicio</a> </button>
+        <button class="nav-barra-button"><a href="../clientes/home-clientes.html">Clientes </a> </button>
+        <button class="nav-barra-button"><a href="../productos/home-productos.html">Productos</a> </button>
+        <button class="nav-barra-button"><a href="../pedidos/home-pedidos.html">Pedidos</a> </button>
+        <button class="nav-barra-button"> <a href="../facturas/home-facturas.html">Facturas</a> </button>
+        <!-- <button>Inicio</button>
+        <button>Clientes</button>
+        <button>Productos</button>
+        <button>Pedidos</button>
+        <button>Facturas</button> -->
+    </nav>
+    
+    <div>
+        <div>
+            <span>Código</span>
+            <input type="number" placeholder="Codigo" disabled value="1">
+        </div>  
+        <div>
+            <span>NIF</span>
+            <input type="text" placeholder="NIF" value="111222333P">
+        </div> 
+        <div>
+            <span>Nombre</span>
+            <input type="text" placeholder="Nombre" value="Paco Parra">
+        </div> 
+        <div>
+            <span>Email</span>
+            <input type="email" placeholder="Email" value="">
+        </div>
+        <div>
+            <span>Dirección</span>
+            <textarea placeholder="Direccion" cols="30" rows="10">Calle Piruleta, n6, Vigo - Pontevedra, CP: 35555</textarea>
+        </div>
+        <div>
+            <span>Filtros</span>
+            <div>
+                <input type="text" placeholder="Número de pedido">
+                <div>
+                    <span>Fecha de pedido</span>
+                    <input type="date" >
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Numero pedido</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Ver pedido</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2024-03-19</td>
+                <td>Cancelado</td>
+                <td><button> <a href="../pedidos/view-pedido.html?codigo=1">Ver</a></button></td>
+           
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2024-04-22</td>
+                <td>Presupuesto</td>
+                <td><button> <a href="../pedidos/view-pedido.html?codigo=4">Ver</a></button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="web-footer-space"></div>
+    <footer class="web-footer">
+        <div class="web-footer-content">
+            Facturapp realizado por los alumnos del bootcamp Full Stack desde 0
+        </div>
+    </footer>
+</body>
+</html>

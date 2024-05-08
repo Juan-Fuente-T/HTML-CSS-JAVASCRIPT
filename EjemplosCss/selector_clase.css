@@ -1,0 +1,59 @@
+/*adyacente que se llame a h2 y al p consecutivo */
+h2 + p {
+  background-color: skyblue;
+}
+
+/*uso  del hijo DIRECTO poder border*/
+ul > li {
+  border: 1px solid black;
+}
+
+/*uso soloo del hijo poner margin y padinf*/
+div li {
+  margin: 10px;
+  padding: 5px;
+  border: black;
+}
+
+/* Aplicar border y padding al div siguiente al h1 */
+h1 + div {
+  border: 2px solid red;
+  padding: 10px;
+}
+
+/* Aplicar border a todos los elementos 
+  *{
+    border: 2px solid red;
+  }*/
+
+h1,
+h2,
+div,
+p {
+  border: 2px solid red;
+}
+
+/* Hacer que la primera letra del h2 sea más grande */
+div > h2:first-of-type:first-letter {
+  /*al ponerlo asi toma solamente la primera letra del primer h2. Si quito first-of-type coloca la primer letra mayuscula a todos los h2*/
+  font-size: 2em;
+}
+
+/* Estilo por defecto del enlace */
+a {
+  color: blue; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+/* Estilo del enlace al tener el ratón encima */
+a:hover {
+  background-color: yellow; /* Fondo amarillo al pasar el ratón por encima */
+}
+
+/* Estilo del enlace al ser clicado */
+a:active {
+  color: red; /* Color del texto rojo al ser clicado */
+}
+a :visited {
+  background-color: blueviolet; /*marca cuando le hicimos click sobre el enlace*/
+}

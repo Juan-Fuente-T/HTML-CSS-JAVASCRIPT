@@ -1,0 +1,36 @@
+.dados-body {
+    display: flex;
+    flex-direction: column;
+    background-color: mistyrose;
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+
+.dado {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+.dado button {
+    background-color: lightcyan;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin: 8px;
+    width: 170px;
+}
+
+.dado button:hover {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.dado button:active {
+    background-color: lightskyblue;
+}

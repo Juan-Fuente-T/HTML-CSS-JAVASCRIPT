@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script-dados.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="div-dado">
+            <button class="boton-dado" onclick="numeroHasta100()">Dado 1-100</button>
+            <input class="input" id="pantalla100" type="number" value="" readonly>
+            <span>El numero que ha salido es: <p id="dadoHasta100"></p></span>
+        </div>
+        <div class="div-dado">
+            <button class="boton-dado" onclick="numeroHasta50()">Dado 1-50</button>
+            <input class="input" id="pantalla50" type="number" value="" readonly>
+            <!-- <p id="dadoHasta50"></p> -->
+        </div>
+        <div class="div-dado">
+            <button class="boton-dado" onclick="numeroHasta10()">Dado 1-10</button>
+            <input class="input" id="pantalla10" type="number" value="" readonly>
+            <!-- <p id="dadoHasta10"></p> -->
+        </div>
+        <div class="div-dado">
+            <button class="boton-dado" onclick="numeroHasta6()">Dado 1-6</button>
+            <input class="input" id="pantalla6" type="number" value="" readonly>
+            <!-- <p id="dadoHasta6"></p> -->
+        </div class="div-dado">
+        <div class="div-dado" >
+            <button class="boton-dado" onclick="numeroHasta6(), numeroHasta10(), numeroHasta50(), numeroHasta100()">Todos</button>
+        </div>
+        <div class="div-dado">
+            <button  class="boton-reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+</body>
+
+</html>

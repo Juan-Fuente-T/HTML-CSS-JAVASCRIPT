@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Facturapp</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <input type="text" placeholder="Numero factura" />
+                <input type="text" placeholder="Código cliente" />
+                <input type="text" placeholder="Nombre cliente" />
+                <input type="text" placeholder="NIF cliente" />
+                <div>
+                    <span>Fecha factura:</span>
+                    <input type="date" />
+                </div>
+            </div>
+            <div>
+                <button><a href="new-factura.html">Generar factura</a></button>
+            </div>
+        </div>
+        <div>
+            <button>Refrescar</button>
+        </div>
+        <table>
+            <tr>
+		        <th>Numero de factura</th>
+		        <th>Numero de pedido</th>
+		        <th>Cliente</th>
+		        <th>Fecha factura</th>
+		        <th>Estado</th>
+		        <th>Ver factura</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Pepito de los Palotes</td>
+                <td>22/04/2024</td>
+                <td>PAGADA (envida por email)</td>
+                <td>
+                    <button>
+                        <a href="view-factura.html?num_fact=1">Ver</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>Fulano Martínez</td>
+                <td>27/05/2024</td>
+                <td>NO PAGADA (no enviada por email)</td>
+                <td>
+                    <button>
+                        <a href="view-factura.html?num_fact=2">Ver</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>Mengano Rodríguez</td>
+                <td>30/05/2024</td>
+                <td>PAGADA (no enviada por email)</td>
+                <td>
+                    <button>
+                        <a href="view-factura.html?num_fact=3">Ver</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

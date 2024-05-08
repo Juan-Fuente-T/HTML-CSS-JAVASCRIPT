@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="code.js"></script>
+</head>
+
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <div id="formulario" style="display: flex; flex-direction: column; align-items: center;">
+        <div>Datos de los jugadores</div>
+        <div>
+            <span>Nombre jugador 1</span>
+            <input id="nombre1" type="text" value="Tu nombre 1" required>
+            <span>Color jugador 1</span>
+            <input id="color1" type="color" value="#ff3300">
+        </div>
+        <div>
+            <span>Nombre jugador 2</span>
+            <input id="nombre2" type="text" value="Tu nombre 2" required>
+            <span>Color jugador 2</span>
+            <input id="color2" type="color" value="#0066ff">
+        </div>
+    </div>
+    <button onclick="empezarPartida(nombre1.value, color1.value, nombre2.value, color2.value)">Aceptar</button>
+   
+    <div id="juego" style="display: flex; flex-direction: column; align-items: center; visibility: hidden;">
+        <div id="turnoJugador">Turno del jugador: </div>
+        <div style="display: flex; flex-direction: row;">
+            <div id="celda_0" onclick="ejecutarTurno(0)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">0</div>
+            <div id="celda_1" onclick="ejecutarTurno(1)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">1</div>
+            <div id="celda_2" onclick="ejecutarTurno(2)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">2</div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div id="celda_3" onclick="ejecutarTurno(3)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">3</div>
+            <div id="celda_4" onclick="ejecutarTurno(4)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">4</div>
+            <div id="celda_5" onclick="ejecutarTurno(5)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">5</div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div id="celda_6" onclick="ejecutarTurno(6)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">6</div>
+            <div id="celda_7" onclick="ejecutarTurno(7)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">7</div>
+            <div id="celda_8" onclick="ejecutarTurno(8)"
+                style="border: 1px solid black; padding: 4px; cursor: pointer;">8</div>
+        </div>
+        <div>
+            <div id="marcador">P1 - 0 : 0 - P2</div>
+            <div id="empates">Empates</div>
+            <div id="partidas">Partidas totales</div>
+            <button onclick="reiniciarPartida()">Limpiar tablero</button>
+            <button onclick="reiniciarTodo()">Reiniciar partida y marcador</button>
+            <button onclick="cargarDatos()">Recuperar partida (si existe)</button>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>

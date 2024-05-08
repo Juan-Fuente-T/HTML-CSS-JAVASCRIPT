@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css"/> -->
+    <script src="_script.js"></script>
+    <link rel="stylesheet" href="_styles.css"/>
+</head>
+<body>
+    <!-- <div>
+         <form id="jugador1Form"  onsubmit="guardarJugador1()"> -->
+        <!-- <form id="jugadoresForm" onsubmit="guardarJugadores(event)" > -->
+            <!-- <label for="jugador1">Nombre del jugador 1:</label> -->
+            <!-- <input type="text" id="jugador1" placeholder="Nombre Jugador 1" name="nombre1" required /> -->
+            <!-- <label for="colorJugador1">Color del jugador 1:</label> -->
+            <!-- <input type="color" id="colorJugador1"  name="color1" value="#ff0000" /> -->
+            <!-- <label for="jugador1">Nombre del jugador 2:</label> -->
+            <!-- <input type="text" id="jugador2" placeholder="Nombre Jugador 2" name="nombre2" required /> -->
+            <!-- <label for="colorJugador2">Color del jugador 2:</label> -->
+            <!-- <input type="color" id="colorJugador2" name="color2" value="#ff0000" />
+            <button type="submit">Guardar</button>
+        </form>
+    </div>  -->
+    <div>
+        <!-- <form id="jugador1Form"  onsubmit="guardarJugador1()"> -->
+        <div id="jugadoresForm" > 
+            <div>Datos de los jugadores</div>
+            <div>
+                <span>Nombre jugador 1</span>
+                <input id="nombre1" type="text" onfocus="nombre1.value = ''" value="Tu nombre 1" required>
+                <span>Color jugador 1</span>
+                <input id="color1" type="color" value="#F08080">
+            </div>
+            <div>
+                <span>Nombre jugador 2</span>
+                <input id="nombre2" type="text" onfocus="nombre2.value = ''" value="Tu nombre 2" required>
+                <span>Color jugador 2</span>
+                <input id="color2" type="color" value="#D5F5E3">
+            </div>
+            <button onclick="empezarPartida(nombre1.value, nombre2.value, color1.value, color2.value)">Aceptar</button>          
+        </div>
+    </div>
+    <div id="contenedorJuego">
+        <div class="containerAvisos">
+            <p id="avisoJugador">INICIO DE JUEGO</p>
+        </div>
+        <div class="contenedorCasillas">
+            <!-- <p class="avisoJugador"></p> -->
+            <div class="row" id="row1">  
+            <div>
+                <div id="cellButton00" class="cellButton" onclick="manejarTurno(0, 0)"></div>
+                 <!-- <button id="cellButton00" class="cellButton" onclick="manejarTurno(0, 0)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton01" class="cellButton" onclick="manejarTurno(0, 1)"></div>
+                <!-- <button id="cellButton01" class="cellButton" onclick="manejarTurno(0, 1)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton02" class="cellButton" onclick="manejarTurno(0, 2)"></div>
+                <!-- <button id="cellButton02" class="cellButton" onclick="manejarTurno(0, 2)"></button> -->
+            </div>
+            </div>
+            
+            <div class="row" id="row2">  
+            <div>
+                <div id="cellButton10" class="cellButton" onclick="manejarTurno(1, 0)"></div>
+                <!-- <button id="cellButton10" class="cellButton" onclick="manejarTurno(1, 0)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton11" class="cellButton" onclick="manejarTurno(1, 1)"></div>
+                <!-- <button id="cellButton11" class="cellButton" onclick="manejarTurno(1, 1)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton12" class="cellButton" onclick="manejarTurno(1, 2)"></div>
+                <!-- <button id="cellButton12" class="cellButton" onclick="manejarTurno(1 ,2)"></button> -->
+            </div>
+            </div>
+
+            <div class="row" id="row3">  
+            <div>
+                <div id="cellButton20" class="cellButton" onclick="manejarTurno(2, 0)"></div>
+                <!-- <button id="cellButton20" class="cellButton" onclick="manejarTurno(2, 0)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton21" class="cellButton" onclick="manejarTurno(2, 1)"></div>
+                <!-- <button id="cellButton21" class="cellButton" onclick="manejarTurno(2, 1)"></button> -->
+            </div>
+            <div>
+                <div id="cellButton22" class="cellButton" onclick="manejarTurno(2, 2)"></div>
+                <!-- <button id="cellButton22" class="cellButton" onclick="manejarTurno(2, 2)"></button> -->
+            </div>
+            </div>
+        </div>
+        <div>
+            <div class="containerAvisos">
+                <p id="numVictorias">NUMERO DE VICTORIAS:</p>
+                <p id="empates">EMPATES:</p>
+            </div>
+            <div class="containerButtons">
+                <button onclick="reiniciarPartida()">Reiniciar Partida</button>
+
+                <button onclick="reiniciarContador()">Reiniciar Contador</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
