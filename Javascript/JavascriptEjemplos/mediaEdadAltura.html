@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Media altura y edad </p>
+    <script>
+        let altura;
+        // let alturas = 0;
+        let alturas = [];
+        let edad;
+        // let edades = 0;
+        let edades = [];
+        for(let i = 0; i < 5; i++){
+            altura = parseInt(prompt("Cual es tu altura?"));
+            // alturas += altura;
+            alturas.push(altura);
+            edad = parseFloat(prompt("Cual es tu edad?"));
+            // edades += edad;
+            edades.push(edad);
+            console.log("Alturas y edades: ", alturas, edades);
+            // if(altura > 175){
+            //     mayores175 += 1;
+            // }
+            // if(edad < 18){
+            //     menores18 += 1;
+            // }
+        };
+        // let mediaAltura = (alturas / 5);
+        // let mediaEdad = (edades / 5);
+        let sumaaltura = 0;
+        let sumaedad = 0;
+        let menores18 = 0;
+        let mayores175 = 0;
+        for(let i = 0; i < alturas.length; i++){
+            sumaaltura += alturas[i];
+            if(alturas[i] > 175){
+                mayores175 += 1;
+            }
+        }
+        for(let i = 0; i < edades.length; i++){
+            sumaedad += edades[i];
+            if(edades[i] < 18){
+                menores18 += 1;
+            }
+        }
+        mediaAltura = sumaaltura/ alturas.length;
+        mediaEdad = sumaedad / edades.length;
+
+
+        document.write(`La media de altura es ${mediaAltura.toFixed(2)} cm.<br>`);
+        document.write(`La media de edad es ${mediaEdad.toFixed(2)} años.<br>`);
+        document.write(`La cantidad de menores es: ${menores18}<br>`);
+        document.write(`La cantidad mas alto de 175 cm es: ${mayores175}`);
+    </script>
+</body>
+</html>

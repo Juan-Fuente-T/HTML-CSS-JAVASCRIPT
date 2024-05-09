@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //preguntar operacion +,-,*,/,salir
+        //preguntar num1
+        //preguntar num2
+        //mostrar 
+        let resultado = false;
+        while(!resultado){
+            let operador = prompt("¿Qué operación quieres realizar: + - * / ? O pulsa q para salir");
+            if(operador.toLowerCase() == "q"){
+                    alert("Hasta pronto");
+                    break;
+                }
+            let num1 = prompt("Introduce el primer número");
+            let num2 = prompt("Introduce el segundo número");
+            
+            resultado = operacion(parseInt(num1), parseInt(num2), operador);
+        
+            // alert(`El resultado es ${resultado}`);
+        }
+
+        function operacion(num1, num2, operador){
+            if (operador != "+" && operador != "-" && operador != "*" && operador != "/" && operador != "q" && operador != "Q"){
+                 alert ("Operación no válida");
+            }else {
+                if(isNaN(num1)){
+                    alert("El primer valor debe ser un numero");
+                }else if(isNaN(num2)){
+                    alert("El segundo valor debe ser un numero");    
+                }
+            }
+            if(operador == "+"){
+                // return num1 + num2;
+                alert(`El resultado es ${num1 + num2}`);
+                return true;
+            }
+            if(operador == "-"){
+                // return num1 - num2;
+                alert(`El resultado es ${num1 - num2}`);
+                return true;
+            }
+            if(operador == "*"){
+                // return num1 * num2;
+                alert(`El resultado es ${num1 * num2}`);
+                return true;
+            }
+            if(operador == "/"){
+                if (num2==0) {
+                    alert('No se puede dividir entre cero');
+                    return "Error";
+                }else{
+                    // return num1 / num2;
+                    alert(`El resultado es ${num1 / num2}`);
+                    return true;
+                }
+            }
+        return false;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Juego Adivina el Número</h1>
+    <script>
+        /**
+         * elegir un numero para adivinar guardarlo en una variable y con promt dentro del while 
+         * preguntar hasta adivinar el numero 
+         * controlar cuando lo adivine, salte un alert con un mensaje y se acabe el juego, y si se le da a 
+         * cancelar que tambien se acabe el juego 
+         * */
+        var randomNum = Math.floor((Math.random() * (100 - 1 + 1)) + 1);
+        //FORMULA  Math.floor((Math.random() * (max - min + 1)) + min);
+        // console.log("Random number", randomNum);
+        alert("Bienvenido al juego Adivina el Número");
+        // var numeroElegido = 33;
+        var numeroElegido = randomNum;
+        let num = 0;
+        let numIntentos = 0;
+        
+        while(num != numeroElegido){
+            respuesta = prompt("Introduce un numero entre 1 y 100");
+            numIntentos++;
+            // console.log("Respuesta", respuesta);
+            num = parseInt(respuesta);
+            // console.log("Num:", num);
+            if(respuesta == null){
+                alert("Hasta pronto");
+                break;
+            }
+            else if(num < 1 || num > 100){
+                alert("El numero tiene que ser mayor o igual a 1 y menor o igual a 100");
+            }
+            else if(num < numeroElegido){
+                alert("El numero secreto es mayor");
+            }
+            else if(num > numeroElegido){
+                alert("El numero secreto es menor");
+            }
+            else if(isNaN(num)){
+                alert("No has escrito un número");
+            }
+            else if(num == numeroElegido){
+                alert("Has ganado! El numero era " + numeroElegido + "Has usado " + numIntentos + " intentos." );
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

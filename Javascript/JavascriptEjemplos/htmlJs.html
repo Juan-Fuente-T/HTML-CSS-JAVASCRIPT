@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * crea una variable nombre, asignale un valor e imprime por consola el typo de dato,
+         * despues cambia la variable a 20 y vuelve a imprimir por consola, 
+         * crea 2 variables mas num1 y num2 y una tercera variable resultado
+         * suma num1 y num2 y guardalo en la variable resultado
+         * despues pinta por consola el resultado
+         * repite este proceso para la resta la multiplicacion la division el modulo
+         * haz a x un incremento en 1 con el ++ y guardalo tambien en resultado
+         * ahora pinta por consola, "la variable x :" el valor "y la variable resultado vale" y el valor 
+         * repite lo mismo para el decremento 
+         * 
+         * repite el proceso para las comprobaciones igual num1 y num2  diferente mayor que y menor que 
+         *  
+         * prueba este codigo pintando con un alert entre cada cambio un mensaje mas la variable x 
+         * var x = 25;
+            x += 5; 
+            x -= 5; 
+            x *= 2; 
+            x /= 2; 
+            x %= 3;
+         * 
+         */
+        let nombre = "Atilano";
+        console.log("Tipo de dato de nombre", typeof nombre);
+        nombre = 20;
+        console.log("Tipo de dato de nombre", typeof nombre);
+        let num1 = 4;
+        let num2 = 2;
+        let result;
+        result = num1 + num2;
+        console.log("Resultado de suma", result);
+        result = num1 - num2;
+        console.log("Resultado de resta", result);
+        result = num1 * num2;
+        console.log("Resultado de multiplicacion", result);
+        result = num1 / num2;
+        console.log("Resultado de division", result);
+        result = num1 % num2;
+        console.log("Resultado de modulo", result);
+
+        let x = 0;
+        result = x++;
+        console.log(`la variable x vale: ${x} y la variable result vale: ${result}`);
+        result = x--;
+        console.log(`la variable x vale: ${x} y la variable result vale: ${result}`);
+        
+        //importancia del orden en el incremento, si el ++ va despues se asigna valor
+        //y desdepues se suma, si va antes se suma y despues se asigna el valor
+
+        result = ++x;
+        console.log(`la variable x vale: ${x} y la variable result vale: ${result}`);
+        result = --x;
+        console.log(`la variable x vale: ${x} y la variable result vale: ${result}`);
+        
+        result = num1 == num2;
+        console.log(`La comparacion (igualdad) de num1 y num2 es: ${result}`);
+        result = num1 != num2;
+        console.log(`La comparacion (diferente) de num1 y num2 es: ${result}`);
+        result = num1 > num2;
+        console.log(`La comparacion (mayor que) de num1 y num2 es: ${result}`);
+        result = num1 < num2;
+        console.log(`La comparacion (menor que) de num1 y num2 es: ${result}`);
+        
+        // autoincrementos();
+
+        function autoincrementos(){
+            var x2 = 25;
+            alert(`Este es el valor de x ahora: ${x2}`);
+            x2 += 5; 
+            alert(`Este es el valor de x ahora: ${x2}`);
+            x2 -= 5; 
+            alert(`Este es el valor de x ahora: ${x2}`);
+            x2 *= 2; 
+            alert(`Este es el valor de x ahora: ${x2}`);
+            x2 /= 2; 
+            alert(`Este es el valor de x ahora: ${x2}`);
+            x2 %= 3;
+            alert(`Este es el valor de x ahora: ${x2}`);
+            return x2;
+        }
+
+        let functionVar = function(){
+            console.log("Esto es una funcion anónima");
+        }
+        //las variables anonimas no suelen usarse, se llaman asi:
+        functionVar();
+
+        let respuesta = prompt("Lo que quieres preguntar");
+        console.log("Esta es lo introducido en el prompt: ", respuesta);
+        let numRespuesta = parseInt(respuesta);
+        console.log("Esta es el numero en el prompt: ", numRespuesta);
+
+      
+    </script>
+</body>
+</html>

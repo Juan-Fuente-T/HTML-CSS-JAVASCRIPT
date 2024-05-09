@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * elegir un numero para adivinar guardarlo en una variable y con promt dentro del while 
+         * preguntar hasta adivinar el numero 
+         * controlar cuando lo adivine, salte un alert con un mensaje y se acabe el juego, y si se le da a 
+         * cancelar que tambien se acabe el juego 
+         * */
+
+        // Generamos un número aleatorio entre 0 y 100
+      //var numeroAleatorio = Math.floor(Math.random() * 101);
+      
+      var numeroAleatorio = random(0, 100);
+      //var numeroAleatorio = 67;
+      var intentos = 0; // Inicializamos el contador de intentos en 0
+      function comprobar(){
+        if(respuesta == null){
+           return false;
+        }else if (respuesta == ""){
+            alert("lo introducido fue vacio");
+        }else if(!numeroUsuario){            
+            alert("lo introducido no fue un numero");
+        }else {
+            // Comparamos el número ingresado por el usuario con el número aleatorio
+            if (numeroUsuario === numeroAleatorio) {
+                alert("¡Felicidades! Adivinaste el número en " + intentos + " intentos.");
+                return false; // Se acertó el número, se muestra un mensaje y se sale del bucle
+                } else if (numeroUsuario < numeroAleatorio) {
+                    alert("El número es mayor. Intenta de nuevo.");
+                } else {
+                    alert("El número es menor. Intenta de nuevo.");
+                }
+            }
+        return true;  
+      }
+      let condicion = true;
+      // Iniciamos un bucle while que se ejecutará indefinidamente hasta que se acierte el número
+      while (condicion) {
+        // Solicitamos al usuario que ingrese un número
+        //var numeroUsuario = parseInt(prompt("Adivina el número (0-100):"));
+        var respuesta = prompt("Adivina el número (0-100):");
+        var numeroUsuario = parseInt(respuesta);
+        intentos++;
+        // Comprobaciones iniciales 
+        condicion = comprobar();
+      }
+
+    function random(min, max) {
+        return Math.floor((Math.random() * (max - min + 1)) + min);
+    }
+    </script>
+</body>
+</html>
