@@ -1,0 +1,187 @@
+:root {
+  --colorPrimario: rgb(235, 163, 29);
+  --colorCards: rgb(247, 240, 230);
+  --colorCardsHover: rgb(255, 242, 224);
+  --colorFondo: rgba(10, 10, 10, 0.89);
+} /*usar para crear paleta de color, por ejemplo, aplicable despues a todo el css*/
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+* {
+  font-family: "Poetsen One", sans-serif;
+  /* border: 1px solid black; */
+}
+
+body {
+  /* background-color: #ebe9e9; */
+  background-image: radial-gradient(#777676 1.1px, #ebe9e9 1.1px);
+  background-size: 22px 22px;
+  margin: 5px;
+  margin-bottom: 40px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+main {
+  flex-direction: column;
+}
+header,
+#add-task-container,
+#projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+#add-task-input {
+  width: 30%;
+}
+
+h1 {
+  background-color: #e1dede;
+  margin-bottom: 50px;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-left: 10px;
+  background-color: #ebe9e9;
+  /* background-color: #f12020; */
+  height: 30px;
+  padding: 2px 1px;
+  width: 160px;
+  border-radius: 2px;
+  /* text-align: center; */
+}
+
+#img1 {
+  /* width: 60px; */
+  width: 5%;
+  height: auto;
+  position: absolute;
+  left: 20%;
+  top: 20px;
+}
+#img2 {
+  /* width: 60px; */
+  width: 5%;
+  height: auto;
+  position: absolute;
+  right: 20%;
+  top: 20px;
+}
+
+.limit-date-icon {
+  font-size: 14px !important;
+}
+
+.limit-date-exceed {
+  color: red;
+}
+
+.limit-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  color: gray;
+}
+
+#lists-container {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#to-do-container,
+#done-container {
+  /* flex-grow: 1; */
+  width: 48%;
+  margin: 0 auto;
+  height: auto;
+  align-items: flex-start;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 5px;
+  position: relative;
+  gap: 10px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .task:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.9);
+  margin-left: 8px;
+  transition: 0.5s;
+} */
+
+.task:hover {
+  box-shadow: 0 8px 6px 2px rgba(0, 0, 0.3, 0.8);
+  /* box-shadow: 0 6px 30px 2px rgba(145, 144, 141, 0.818); */
+  transform: translateY(-2px);
+  transition: 0.5s;
+}
+
+.mark-as-done:hover,
+.mark-as-to-do:hover {
+  color: green;
+  cursor: pointer;
+}
+.trash {
+  position: absolute;
+  right: 10px;
+}
+
+.trash:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.limit-date-container {
+  margin-right: 33px;
+}
+
+.task_name {
+  /* margin-right: 35px; */
+  width: 80%;
+  word-wrap: break-word;
+}
+_footer {
+  text-align: center;
+  background-color: #e1dede;
+  padding: 8px;
+  border-radius: 4px;
+  /* position: sticky; */
+  /* position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+footer {
+  position: absolute;
+  background-color: #e1dede;
+  padding: 8px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myLoadFunction()">
+    <h1 style="color: blue;" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Eventos de ratón</h1>
+    <input type="text" placeholder="Eventos de teclado(salen en la consola)" 
+    onkeypress="keyPress()">
+    <script>
+        // for(let i = 0; i < 10; i++){
+        //     console.log(i);
+        //     document.write(i);
+        // }
+        function mouseOver(element){
+            // console.log("Hola mundo!")
+            element.style.color = "red";
+        }
+        function mouseOut(element){
+            element.style.color = "blue";
+        }
+
+        function keyPress(key){
+            console.log("he pulsado una tecla a las " + new Date());
+        }
+        function myLoadFunction(){
+            alert("Pagina cargada!!");
+        }
+    </script>
+</body>
+</html>

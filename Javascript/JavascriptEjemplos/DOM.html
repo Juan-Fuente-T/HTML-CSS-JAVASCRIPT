@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar listas</title>
+</head>
+<body>
+    <h1>A modificar listas!😎</h1>
+    <ul id="list">
+        <li id="first-child">Único elemento</li>
+    </ul>
+    <script>
+        var list = document.getElementById("list");
+        var second = document.createElement ("li");
+        second.innerText = "Nueva línea";
+        list.appendChild(second);
+        var third = document.createElement ("li");
+        third.innerText = "Nueva línea 2";
+        second.parentNode.appendChild(third);
+    </script>
+</body>
+</html>

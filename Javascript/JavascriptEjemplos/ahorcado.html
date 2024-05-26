@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+<h1>Ejercicio del ahorcado</h1>
+<p>Vamos a jugar al ahorcado: Encuentra la palabra escondida</p>
+<p>Las palabra inicial será una palabra aleatoria de estas: Arroz, Casa, Galleta, Pelota, Ventilador, Botella, Cafe
+</p>
+<p>Necesitamos saber la lista de letras usadas y que letras hemos acertado y en que posición</p>
+<p>Necesitais investigar el uso de document.getElementById("ID_DE_UN_ELEMENTO_HTML") 😋</p>
+
+<hr>
+
+<h1>Ahorcado</h1>
+<p id="word-container"></p>
+<input id="input-container" onkeyup="checkLetter()" />
+<p id="wrong-container"></p>
+
+<script>
+    const words = ["Arroz", "Casa", "Galleta", "Pelota", "Ventilador", "Botella", "Cafe"];
+    const word = words[getRandom(0, words.length - 1)].toUpperCase();
+    const splittedWord = word.split("");
+    var wordContainer = document.getElementById("word-container");
+    var inputContainer = document.getElementById("input-container");
+    var wrongContainer = document.getElementById("wrong-container");
+    var guessedLetters = [];
+    var wrongLetters = [];
+
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function checkLetter() {
+        let letter = inputContainer.value.toUpperCase();
+        inputContainer.value = "";
+        letterInWord(letter);
+        updateUI();
+
+    }
+
+    function letterInWord(letter) {
+        if (splittedWord.includes(letter)) {
+            guessedLetters.push(letter)
+        } else {
+            wrongLetters.push(letter)
+        }
+    }
+
+    function updateUI() {
+        wordContainer.innerHTML = "";
+        let reveal = "";
+        for (let i = 0; i < word.length; i++) {
+            let letter = splittedWord[i]
+            let showLetter = guessedLetters.includes(letter) ? letter : "_ "
+            reveal = reveal.concat(showLetter);
+        }
+        wordContainer.innerHTML = reveal;
+
+        if (wrongLetters.length != 0) {
+            wrongContainer.innerHTML = "Letras erróneas: " + wrongLetters
+        }
+    }
+
+    updateUI();
+
+</script>
+
+</body>
+
+</html>

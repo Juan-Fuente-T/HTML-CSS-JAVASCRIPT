@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego ahorcado</title>
+</head>
+
+<body>
+    <h1>Ejercicio del ahorcado</h1>
+    <p>Vamos a jugar al ahorcado: Encuentra la palabra escondida</p>
+    <p>Las palabra inicial será una palabra aleatoria de estas: Arroz, Casa, Galleta, Pelota, Ventilador, Botella, Café</p>
+    <p>Necesitamos saber la lista de letras usadas y que letras hemos acertado y en que posición</p>
+    <p>Necesitais investigar el uso de document.getElementById("ID_DE_UN_ELEMENTO_HTML") 😋</p>
+    <input type="text" name="letras" id="inputLetras" oninput="(guardarLetra())">
+    <p id="letrasPalabra"></p>
+    <script>
+        let listaPalabras = ["Arroz", "Casa", "Galleta", "Pelota", "Ventilador", "Botella", "Café"]
+        var randomNum = Math.floor((Math.random() * (listaPalabras.length - 1 + 1)) + 1);
+        let letrasFalladas = [];
+        let letrasAcertadas = [];
+
+        let palabraSecreta = listaPalabras[randomNum - 1]
+        console.log("Palabra secreta", palabraSecreta);
+        
+        // alert("Bienvenido al juego del ahorcado. Suerte")
+        // let letra = prompt("Introduce una letra");
+        let letra = '';
+        let letrasPalabra = (palabraSecreta.toLowerCase()).split("");
+        console.log("Letras Palabra secreta", letrasPalabra);
+
+        let contenedorHtml = document.getElementById("letrasPalabra");
+        
+        // contenedorHtml.innerHTML = "";
+
+        function guardarLetra(){
+            letra = document.getElementById("inputLetras").value;
+            console.log("Letra input: ", letra);
+            let letrasArray = [];
+            // document.getElementById("letrasPalabra").innerHTML = [];
+            for(let i = 0; i < letrasPalabra.length; i++){
+                letrasArray.push('_');
+                document.getElementById("letrasPalabra").innerHTML = letrasArray;
+
+            }
+            if(letrasPalabra.includes(letra)){
+                letrasAcertadas.push(letra);
+                for(let i = 0; i < letrasPalabra.length; i++){
+                    if(letrasPalabra[i] == letra){
+                        letrasArray[i] = letra;
+                }
+                console.log("Letras acertadas", letrasAcertadas);
+                document.getElementById("letrasPalabra").innerHTML = letrasArray;
+            }
+            }else{
+                letrasFalladas.push(letra);
+                console.log("Letras falladas", letrasFalladas);
+            }
+        }
+    </script>
+</body>
+
+</html>

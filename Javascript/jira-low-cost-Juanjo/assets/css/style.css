@@ -1,0 +1,190 @@
+* {
+  font-family: "Poetsen One", sans-serif;
+
+  /* border: 1px solid black;  */
+}
+@media (max-width: 990px) {
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
+  background-color: rgb(196, 196, 196);
+}
+
+header,
+main,
+#add-task-container,
+#lists-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#add-task-container {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+}
+
+#add-task-description {
+  width: 304px;
+  height: 133px;
+  border-radius: 4px;
+}
+
+#add-task-input {
+  width: 300px;
+}
+
+input {
+  width: 100px;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.trash {
+  position: absolute;
+  right: 5px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.trash:hover {
+  color: red;
+  cursor: pointer;
+}
+
+header {
+  justify-content: center;
+}
+
+main {
+  flex-direction: column;
+}
+
+#list-container {
+  gap: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.limit-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+  color: black;
+}
+
+#lists-container {
+  gap: 10px;
+}
+
+#to-do-container,
+#done-container,
+#in-progress-container {
+  flex-direction: column;
+  width: 30%;
+  justify-items: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  /* min-height:400px; */
+}
+
+.task {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: left;
+  padding: 8px;
+  margin: 5px;
+  position: relative;
+  gap: 10px;
+  border: 2px solid black;
+  background-color: beige;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 3px rgb(112, 112, 112);
+  margin-bottom: 100px;
+  word-break: break-all;
+}
+
+.task_name {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  white-space: break-all;
+  cursor: pointer;
+}
+
+.task_description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.task:hover {
+  margin-left: 10px;
+  box-shadow: 6px 6px 6px 6px rgb(112, 112, 112);
+}
+
+.mark-as-to-do {
+  position: absolute;
+  left: 5px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+.mark-as-done:hover,
+.mark-as-to-do:hover {
+  color: rgb(28, 184, 8);
+  cursor: pointer;
+}
+.mark-as-to-do {
+  position: absolute;
+  left: 5px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+main {
+  flex-direction: column;
+}
+
+.limit-date-icon {
+  font-size: 14px !important;
+}
+
+.limit-date-excdeed {
+  color: red;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #333;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  border-radius: 4px;
+}
